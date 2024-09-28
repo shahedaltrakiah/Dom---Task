@@ -1,12 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/e18153dca3.js" crossorigin="anonymous"></script>
     <title>Dom project</title>
 </head>
+
 <body>
+    <div class="header">
+        <h1>Dom Task</h1>
+    </div>
+
+    <div id="toolbar">
+        <button class="text-bold" onclick="makeBold()"><i class="fa-solid fa-bold"></i></button>
+
+        <button class="text-italic" onclick="makeItalic()"><i class="fa-solid fa-italic"></i></button>
+
+        <button class="alignText-left" onclick="alignText('left')"><i class="fa-solid fa-align-left"></i></button>
+
+        <button class="alignText-center" onclick="alignText('center')"><i class="fa-solid fa-align-center"></i></button>
+
+        <button class="alignText-right" onclick="alignText('right')"><i class="fa-solid fa-align-right"></i></button>
+
+        <button class="text-upper" onclick="makeUpperCase()">Upper Case</button>
+
+        <button class="text-lower" onclick="makeLowerCase()">Lower Case</button>
+
+        <button class="text-capitalize" onclick="makeCapitalized()">Capitalize</button>
+
+        <button class="text-clear" onclick="clearText()">Clear Text</button>
+
+        <button class="text-color">
+            <i class="fa-solid fa-paintbrush"></i>
+            <input type="color" id="fontColor" onchange="changeFontColor()">
+        </button>
+
+        <button class="text-background-color">
+            <i class="fa-solid fa-fill-drip"></i>
+            <input type="color" id="bgColor" onchange="changeBgColor()">
+        </button>
+
+        <button class="text-font">
+            <select id="fontFamily" onchange="changeFontFamily()">
+                <option value="Arial">Arial</option>
+                <option value="Courier New">Courier New</option>
+                <option value="Georgia">Georgia</option>
+                <option value="Times New Roman">Times New Roman</option>
+                <option value="Verdana">Verdana</option>
+            </select>
+        </button>
+
+        <button class="text-font-size">
+            <select id="fontSize" onchange="changeFontSize()">
+                <option value="12px">12px</option>
+                <option value="14px">14px</option>
+                <option value="16px">16px</option>
+                <option value="18px">18px</option>
+                <option value="20px">20px</option>
+                <option value="24px">24px</option>
+                <option value="28px">28px</option>
+                <option value="32px">32px</option>
+                <option value="34px">34px</option>
+            </select>
+        </button>
+
+        <button class="print-text" onclick="printText()">
+            <i class="fa-solid fa-print" style="margin-right: 4px;"></i>
+            Print Text
+        </button>
+
+    </div>
+
+    <textarea id="textarea" placeholder="Type your text here..."></textarea>
 
     <script src="js/main.js"></script>
     

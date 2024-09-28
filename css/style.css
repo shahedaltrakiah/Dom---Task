@@ -1,0 +1,66 @@
+.header {
+    text-align: center;
+    border: 1px solid black;
+    padding: 10px;
+    margin: 30px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+}
+
+.header h1 {
+    color: cadetblue;
+    font-size: 50px;
+}
+
+#toolbar {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+#toolbar button {
+    display: flex;
+    align-items: center;  
+    justify-content: center; 
+    background-color: #f0f0f0;
+    border: 1px solid cadetblue;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+#toolbar button:hover {
+    background-color: rgba(95, 158, 160, 0.336);
+    color: cadetblue;
+}
+
+#toolbar i {
+    color: cadetblue;
+    font-size: 18px;
+}
+
+#toolbar input[type="color"] {
+    width: 35px;
+    height: 35px;
+    border: none;
+}
+
+#toolbar select {
+    padding: 5px;
+    margin-left: 5px;
+    border-radius: 5px;
+    border: 1px solid cadetblue;
+}
+
+#textarea {
+    width: 94%;
+    height: 300px;
+    margin: 20px auto;
+    display: block;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    padding: 10px;
+    border: 2px solid cadetblue;
+    border-radius: 10px;
+}
